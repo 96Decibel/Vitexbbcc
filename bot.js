@@ -8,6 +8,7 @@ const Discord = require("discord.js");
         });
 
         client.on('message', message => {
+          var prefix = "$";
           if(message.author.bot) return;
           if(message.channel.type === 'dm') return;
               if(message.content.startsWith(prefix + 'bc')) {
@@ -427,4 +428,4 @@ const Discord = require("discord.js");
            })
               }});
 
-client.login(process.env.BOT_TOKEN);
+              client.login(process.env.BOT_TOKEN);
